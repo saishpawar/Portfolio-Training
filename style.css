@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: white;
+}
+
+header , .container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin:  auto;
+    padding: 2%;
+}
+
+.header__list{
+    display: flex;
+    gap: 20%;
+   
+}
+.hamburger{
+    display: none;
+}
+.hamMenu{
+    display: none;
+    flex-flow: column;
+    font-size: small;
+    margin-left: 50px;
+
+}
+
+.hamopt{
+    padding: 10px;
+}
+
+.hamopt:hover{
+
+    cursor: pointer;
+    border-bottom: .5px solid black;
+    display: inline-block;
+}
+
+@media (max-width: 630px)
+{
+    .header__list{
+        gap: 5%;
+       
+    }
+}
+
+@media (max-width:450px)
+{
+    .header__list{
+        display: none;    
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    
+
+}
+
+.header__logo{
+    max-width: 70%;
+}
+.header__list__items:hover{
+    cursor: pointer;
+}
+
+.header__list__items{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333333;
+    font-weight:bold;
+
+}
+
+@media (max-width: 870px) {
+
+    .header__list{
+        gap:15px
+    }
+    .header__list__items{
+        font-size: 15px;
+    }
+}
+
+
+
+@media (max-width: 555px) {
+
+    .header__list{
+        gap:10px
+    }
+    .header__list__items{
+        font-size: 12px;
+    }
+}
+
+.header__title{
+    width: 40%;
+}
+
+.header__list{
+    width: 40%;
+}
+
+
+
+/* navbar done */
+
+
+
+.banner{
+    position: relative;
+    
+}
+
+
+
+.image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: contain;
+
+}
+
+.banner__text{
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    gap: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    font-weight: bold;
+    font-size: 50px;
+    color: #333333;
+    text-align: center;
+}
+
+@media (max-width: 750px) {
+
+    h1{
+        font-size:1.2em;
+    }
+
+    .banner .banner__text p{
+        font-size: 1em;
+    }
+}
+
+
+.banner p{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+
+/* About Us section */
+
+
+.container h3{
+    font-weight: 600;
+    font-size: 36px;
+    
+}
+
+.container__info{
+
+    width: 75%;
+    margin: auto;
+    display: flex;
+    gap: 20%;
+    justify-content: space-evenly;
+}
+
+.container__info_data{
+    font-size: 100%;
+}
+@media (max-width: 1200px) {
+    .container{
+        width: 90vw;
+        /* margin: 20px; */
+    }
+    h3{
+        align-self: center;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .container__info{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin: auto;
+        gap: 20px;
+    }
+   .container__innermost{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+   }
+}
+button{
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid #333333;
+    padding: 20px 40px;
+    border-radius: 4px;
+    color: #333333;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+
+    button{
+        padding: 10px 20px;
+    }
+}
+
+/* Project section */
+
+.projects{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0;
+    padding: 100px;
+    background-color:#f7fbff ;
+    width: 100vw;
+}
+
+.project__images{
+
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 34px;
+}
+
+@media (max-width:1000px)
+{
+    .project__images{
+        grid-template-columns: repeat(2,auto);
+    }
+}
+
+@media (max-width:650px)
+{
+    .project__images{
+        grid-template-columns: repeat(1,auto);
+    }
+}
+
+.projects__btn--hover:hover{
+background: #333333;
+transition: 0.5s;
+color: #ffffff;
+}
+
+
+/* footer section */
+
+footer{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    padding:100px 0 0 0;
+}
+
+footer h2{
+    font-size: 150%;
+    font-weight: 600;
+}
+hr{
+    width: 100vw;
+    border: 1px solid #f2f2f2;
+}
+.footer__last{
+
+    align-self: start;
+    margin-left: 10%;
+
+    margin-bottom: 50px;
+
+}
+
+
+@media (max-width: 420px) {
+
+    .footer__last{
+        
+        align-items: center;
+        margin-left:25% ;
+
+    }
+
+}
